@@ -3,6 +3,8 @@ This is a portfolio project in Unity started after being inspired by a tabletop-
 
 In its current state, I have had enough time to mess with it to make a somewhat functional WebGL flat version that served primarily as a way for me to tinker with new code generation tools like Claude and Continue.Dev in VSCode. May or may not have been committed in a functional state!
 
+Find the latest committed version of the build [here](https://solakin.github.io/DiceStorm/Build)
+
 ## Description of Game Concept
 NOTE: I am changing this somewhat to respect the original source, but will try to maintain its spirit.
 
