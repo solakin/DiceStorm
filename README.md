@@ -1,6 +1,8 @@
 # README
 This is a portfolio project in Unity started after being inspired by a tabletop-turned-virtual game concept that sounded fun. The aim is to implement a very small slice of this game but (hopefully) architected and designed well enough to convey how one might progress this to a proper product. And whatever else I feel like throwing in.
 
+In its current state, I have had enough time to mess with it to make a somewhat functional WebGL flat version that served primarily as a way for me to tinker with new code generation tools like Claude and Continue.Dev in VSCode. May or may not have been committed in a functional state!
+
 ## Description of Game Concept
 NOTE: I am changing this somewhat to respect the original source, but will try to maintain its spirit.
 
