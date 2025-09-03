@@ -1,0 +1,16 @@
+{
+    "name": "GameFrontend",
+    "rootNamespace": "",
+    "references": [
+        "GUID:f9e354091c9ab524783fa8aead787a93"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

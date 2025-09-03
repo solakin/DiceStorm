@@ -1,0 +1,155 @@
+.screen {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    background-color: rgb(40, 40, 40);
+}
+
+.header {
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.title {
+    font-size: 48px;
+    color: white;
+    -unity-font-style: bold;
+}
+
+.heroes-container {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.hero-card {
+    width: 300px;
+    height: 400px;
+    margin: 0 20px;
+    background-color: rgb(60, 60, 60);
+    border-radius: 10px;
+    padding: 10px;
+    transition: all 0.2s;
+}
+
+.hero-card:hover {
+    scale: 1.05;
+    background-color: rgb(80, 80, 80);
+}
+
+.hero-card.selected {
+    border: 2px solid rgb(255, 215, 0);
+}
+
+.hero-frame {
+    flex-grow: 1;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.hero-frame.warrior {
+    background-image: url('project://database/Assets/Hero/Resources/bg_warrior.png');
+}
+
+.hero-frame.wizard {
+    background-image: url('project://database/Assets/Hero/Resources/bg_wizard.png');
+}
+
+.hero-name {
+    font-size: 24px;
+    color: white;
+    -unity-text-align: middle-center;
+    margin: 10px;
+}
+
+.hero-hp {
+    color: rgb(255, 100, 100);
+    -unity-text-align: middle-center;
+}
+
+.ability-select {
+    margin-top: 20px;
+}
+
+.section-title {
+    font-size: 24px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.ability-cards {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.ready-button {
+    width: 200px;
+    height: 50px;
+    align-self: center;
+    margin-top: 40px;
+    font-size: 24px;
+    background-color: rgb(0, 150, 0);
+    color: white;
+    border-radius: 25px;
+    transition: all 0.2s;
+}
+
+.ready-button:hover {
+    background-color: rgb(0, 180, 0);
+    scale: 1.05;
+}
+
+.ready-button:disabled {
+    background-color: rgb(100, 100, 100);
+    opacity: 0.5;
+}
+
+.ability-card {
+    width: 200px;
+    height: 300px;
+    margin: 10px;
+    padding: 15px;
+    background-color: rgb(60, 60, 60);
+    border-radius: 8px;
+    transition: all 0.2s;
+}
+
+.ability-card:hover {
+    scale: 1.05;
+    background-color: rgb(80, 80, 80);
+}
+
+.ability-card.selected {
+    border: 2px solid rgb(255, 215, 0);
+    background-color: rgb(70, 65, 30);
+    scale: 1.05;
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.3);
+}
+
+.ability-card.selected:hover {
+    background-color: rgb(80, 75, 40);
+}
+
+.ability-name {
+    font-size: 20px;
+    color: white;
+    -unity-font-style: bold;
+    margin-bottom: 10px;
+}
+
+.ability-description {
+    font-size: 14px;
+    color: rgb(200, 200, 200);
+    margin: 10px 0;
+    white-space: normal;
+    -unity-text-align: upper;
+}
+
+.ability-cost {
+    font-size: 16px;
+    color: rgb(255, 215, 0);
+    margin-top: auto;
+    -unity-text-align: middle-center;
+}

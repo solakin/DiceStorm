@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<engine:UXML
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:engine="UnityEngine.UIElements"
+    xmlns:editor="UnityEditor.UIElements"
+    xsi:noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd">
+
+    <Style src="TitleScreen.uss" />
+    
+    <engine:VisualElement name="title-screen" class="screen">
+        <engine:Label text="DICE STORM" class="title" />
+        
+        <engine:VisualElement name="menu-container" class="menu-container">
+            <engine:Button name="ai-battle-button" text="Battle AI" class="menu-button" />
+            <engine:Button name="online-battle-button" text="Online Battle" class="menu-button" enabled="false"/>
+        </engine:VisualElement>
+
+        <engine:Label text="v0.1" class="version-text" />
+    </engine:VisualElement>
+
+</engine:UXML>

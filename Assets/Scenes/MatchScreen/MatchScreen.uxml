@@ -1,0 +1,66 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/Scenes/MatchScreen/MatchScreen.uss?fileID=7433441132597879392&amp;guid=83c0fb613e7ae5341be05ef451a05b2a&amp;type=3#MatchScreen" />
+    <engine:VisualElement name="match-screen" class="screen">
+        <engine:VisualElement name="player1-board" class="player-board">
+            <engine:Label name="player1-name" class="player-name" />
+            <engine:VisualElement name="player1-hero-frame" class="hero-frame" style="background-image: resource(&apos;bg_warrior&apos;);">
+                <engine:Label name="player1-hero-type" text="Warrior" class="hero-type" />
+            </engine:VisualElement>
+            <engine:ProgressBar name="player1-health" class="health-bar" />
+            <engine:VisualElement name="player1-dice" class="dice-container">
+                <engine:Label text="Available Dice" class="section-label" />
+                <engine:VisualElement name="player1-dice-pool" class="dice-pool">
+                    <engine:VisualElement class="die shield-die template" style="display: flex;">
+                        <engine:Label text="🛡️" class="die-icon" />
+                    </engine:VisualElement>
+                    <engine:VisualElement class="die explosion-die template" style="display: flex;">
+                        <engine:Label text="💥" class="die-icon" />
+                    </engine:VisualElement>
+                </engine:VisualElement>
+            </engine:VisualElement>
+            <engine:VisualElement name="player1-abilities" class="ability-container">
+                <engine:Label text="Abilities" class="section-label" />
+                <engine:VisualElement name="player1-ability-cards" class="ability-cards">
+                    <engine:VisualElement class="card ability-card template" style="display: flex;">
+                        <engine:Label text="Ability Name" class="card-name card-name-2" />
+                        <engine:Label text="Ability Description Too Long Too Long Too Long&#10;" class="card-description card-description-2" />
+                        <engine:Label text="Cost: 2🛡️ 1💥" class="card-cost" />
+                    </engine:VisualElement>
+                </engine:VisualElement>
+            </engine:VisualElement>
+        </engine:VisualElement>
+        <engine:VisualElement name="center-area" class="center-area">
+            <engine:Label name="turn-indicator" text="Your Turn" class="turn-indicator" />
+            <engine:Button name="end-turn-button" text="End Turn" class="end-turn-button" />
+            <engine:Label name="action-effect" transition="all 0.3s" opacity="1" width="200px" height="50px" overflow-y="auto" border="1px solid rgba(255, 255, 255, 0.3)" padding="5px" background-color="rgba(0, 0, 0, 0.6)" style="color: white; font-size: 20px; margin: 10px; white-space: normal; -unity-text-align: lower-left; overflow: hidden; width: 100%; height: 117px; align-content: flex-end; align-items: flex-start; justify-content: flex-end;" />
+        </engine:VisualElement>
+        <engine:VisualElement name="player2-board" class="player-board">
+            <engine:Label name="player2-name" class="player-name" />
+            <engine:VisualElement name="player2-hero-frame" class="hero-frame" style="background-image: resource(&apos;bg_warrior&apos;);">
+                <engine:Label name="player2-hero-type" text="Warrior" class="hero-type" />
+            </engine:VisualElement>
+            <engine:ProgressBar name="player2-health" class="health-bar" />
+            <engine:VisualElement name="player2-dice" class="dice-container">
+                <engine:Label text="Available Dice" class="section-label" />
+                <engine:VisualElement name="player2-dice-pool" class="dice-pool">
+                    <engine:VisualElement class="die shield-die template" style="display: flex;">
+                        <engine:Label text="🛡️" class="die-icon" />
+                    </engine:VisualElement>
+                    <engine:VisualElement class="die explosion-die template" style="display: flex;">
+                        <engine:Label text="💥" class="die-icon" />
+                    </engine:VisualElement>
+                </engine:VisualElement>
+            </engine:VisualElement>
+            <engine:VisualElement name="player2-abilities" class="ability-container">
+                <engine:Label text="Abilities" class="section-label" />
+                <engine:VisualElement name="player2-ability-cards" class="ability-cards">
+                    <engine:VisualElement class="card ability-card template">
+                        <engine:Label text="Ability Name" class="card-name" />
+                        <engine:Label text="Ability Description" class="card-description" />
+                        <engine:Label text="Cost: 2🛡️ 1💥" class="card-cost" />
+                    </engine:VisualElement>
+                </engine:VisualElement>
+            </engine:VisualElement>
+        </engine:VisualElement>
+    </engine:VisualElement>
+</engine:UXML>

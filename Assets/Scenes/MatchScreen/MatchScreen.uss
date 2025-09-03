@@ -1,0 +1,274 @@
+.screen {
+    width: 100%;
+    height: 100%;
+    flex-direction: row;
+    background-color: rgb(40, 40, 40);
+}
+
+.player-board {
+    width: 40%;
+    height: 100%;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.center-area {
+    width: 20%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.player-name {
+    font-size: 24px;
+    color: white;
+    -unity-font-style: bold;
+    margin-bottom: 10px;
+}
+
+.hero-frame {
+    width: 100%;
+    height: 200px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background-color: rgb(60, 60, 60);
+}
+
+.health-bar {
+    height: 20px;
+    margin-bottom: 20px;
+}
+
+.health-bar .unity-progress-bar__progress {
+    background-color: rgb(255, 100, 100);
+}
+
+.dice-container {
+    margin-bottom: 20px;
+}
+
+.dice-pool {
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.die {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s;
+}
+
+.die:hover {
+    scale: 1.1;
+}
+
+.die-icon {
+    font-size: 24px;
+    -unity-text-align: middle-center;
+}
+
+.shield-die {
+    background-color: rgb(100, 149, 237);
+}
+
+.explosion-die {
+    background-color: rgb(255, 99, 71);
+}
+
+.section-label {
+    color: white;
+    margin: 10px 0;
+}
+
+.ability-cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.defense-cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 120px;
+    height: 160px;
+    margin: 5px;
+    background-color: rgb(60, 60, 60);
+    border-radius: 5px;
+    padding: 10px;
+    transition: all 0.2s;
+    word-wrap: break-word;
+}
+
+.card:hover {
+    scale: 1.05;
+    background-color: rgb(80, 80, 80);
+}
+
+.card.disabled {
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+.card.usable {
+    border: 2px solid rgb(255, 215, 0);
+}
+
+.card-name {
+    font-size: 16px;
+    color: white;
+    -unity-font-style: bold;
+    margin-bottom: 5px;
+    white-space: normal;
+    word-wrap: normal;
+    -unity-text-align: upper-center;
+    width: 100%;
+}
+
+.card-description {
+    width: 90%;
+    font-size: 12px;
+    color: rgb(200, 200, 200);
+    white-space: normal;
+    -unity-text-align: upper-left;
+    text-overflow: clip;
+    max-width: 90%;
+    height: auto;
+    max-height: 50%;
+    text-overflow: clip;
+    overflow: hidden;
+    white-space: normal;
+    -unity-text-align: upper-left;
+
+    flex-shrink: 1;
+    flex-grow: 1;
+}
+
+.card-cost {
+    font-size: 14px;
+    color: rgb(255, 215, 0);
+    position: absolute;
+    bottom: 10px;
+}
+
+.turn-indicator {
+    font-size: 32px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.end-turn-button {
+    width: 150px;
+    height: 50px;
+    font-size: 20px;
+    background-color: rgb(0, 150, 0);
+    color: white;
+    border-radius: 25px;
+    transition: all 0.2s;
+}
+
+.end-turn-button:hover {
+    background-color: rgb(0, 180, 0);
+    scale: 1.05;
+}
+
+.end-turn-button:disabled {
+    background-color: rgb(100, 100, 100);
+    opacity: 0.5;
+}
+
+.template {
+    display: none;
+}
+
+.hero-frame.warrior {
+    background-image: url('project://database/Assets/Hero/Resources/bg_warrior.png');
+}
+
+.hero-frame.wizard {
+    background-image: url('project://database/Assets/Hero/Resources/bg_wizard.png');
+}
+
+.status-effects {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 5px;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+.status-icon {
+    font-size: 20px;
+    width: 30px;
+    height: 30px;
+    margin: 2px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+    -unity-text-align: middle-center;
+    transition: all 0.2s;
+}
+
+.status-icon:hover {
+    scale: 1.2;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.damage-flash {
+    transition: all 0.2s;
+    background-color: rgb(255, 0, 0);
+}
+
+.game-end-screen {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s;
+}
+
+.result-text {
+    font-size: 72px;
+    color: white;
+    -unity-font-style: bold;
+    margin-bottom: 40px;
+}
+
+.play-again-button {
+    width: 200px;
+    height: 60px;
+    font-size: 24px;
+    background-color: rgb(0, 150, 0);
+    color: white;
+    border-radius: 30px;
+    transition: all 0.2s;
+}
+
+.play-again-button:hover {
+    background-color: rgb(0, 180, 0);
+    scale: 1.05;
+}
+
+.play-again-button:active {
+    background-color: rgb(0, 120, 0);
+    scale: 0.95;
+}
+
+.action-effect {
+    transition: all 0.3s;
+    opacity: 1;
+}
+
+.action-effect.flash {
+    opacity: 0.8;
+    animation: flash 0.5s;
+}

@@ -1,0 +1,41 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/Scenes/HeroSelect/HeroSelect.uss?fileID=7433441132597879392&amp;guid=e84c296d858ca3142a6f6af85aca038f&amp;type=3#HeroSelect" />
+    <engine:VisualElement name="hero-select-screen" class="screen">
+        <engine:VisualElement name="header" class="header">
+            <engine:Label text="Choose Your Hero" class="title" />
+        </engine:VisualElement>
+        <engine:VisualElement name="heroes-container" class="heroes-container">
+            <engine:VisualElement name="warrior-card" class="hero-card">
+                <engine:VisualElement name="warrior-frame" class="hero-frame warrior" style="background-image: resource(&apos;bg_warrior&apos;);" />
+                <engine:Label text="Warrior" class="hero-name" />
+                <engine:Label text="30 HP" class="hero-hp" />
+            </engine:VisualElement>
+            <engine:VisualElement name="wizard-card" class="hero-card">
+                <engine:VisualElement name="wizard-frame" class="hero-frame wizard" style="background-image: resource(&apos;bg_wizard&apos;);" />
+                <engine:Label text="Wizard" class="hero-name" />
+                <engine:Label text="15 HP" class="hero-hp" />
+            </engine:VisualElement>
+        </engine:VisualElement>
+        <engine:VisualElement name="ability-select" class="ability-select">
+            <engine:Label text="Select 2 Abilities" class="section-title" style="white-space: nowrap; -unity-text-align: upper-center;" />
+            <engine:VisualElement name="ability-cards" class="ability-cards">
+                <engine:VisualElement name="placeholder-card-1" class="ability-card">
+                    <engine:Label text="Mighty Slash" class="ability-name" />
+                    <engine:Label text="Deal 5 damage to the enemy hero. If you have 3 or more shield dice, deal 8 damage instead." class="ability-description" />
+                    <engine:Label text="Cost: 2🛡️ 1💥" class="ability-cost" />
+                </engine:VisualElement>
+                <engine:VisualElement name="placeholder-card-2" class="ability-card">
+                    <engine:Label text="Frost Nova" class="ability-name" />
+                    <engine:Label text="Deal 3 damage to the enemy hero and prevent them from using abilities next turn." class="ability-description" />
+                    <engine:Label text="Cost: 1🛡️ 2💥" class="ability-cost" />
+                </engine:VisualElement>
+                <engine:VisualElement name="placeholder-card-3" class="ability-card">
+                    <engine:Label text="Battle Stance" class="ability-name" />
+                    <engine:Label text="Gain 3 shield and draw an additional die next turn." class="ability-description" />
+                    <engine:Label text="Cost: 3🛡️ 0💥" class="ability-cost" />
+                </engine:VisualElement>
+            </engine:VisualElement>
+        </engine:VisualElement>
+        <engine:Button name="ready-button" text="Ready" class="ready-button" />
+    </engine:VisualElement>
+</engine:UXML>
